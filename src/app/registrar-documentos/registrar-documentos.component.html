@@ -1,0 +1,16 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center"> Registro de cliente </h3>
+
+    <form (ngSubmit)="onSubmit()">
+         <div class="form-group">
+            <label>Tipo de documento: </label>
+            <input type="text" class="form-control" placeholder="Tipo de coumento" id="nombre" [(ngModel)]="documentos.TIPDOCU" name="nombre">
+            <label>Numero de documento: </label>
+            <input type="text" class="form-control" placeholder="Numero de documento" id="nombre" [(ngModel)]="documentos.NODOCU" name="apellido">
+            <label>Id client: </label>
+            <input type="text" class="form-control" placeholder="Id cliente" id="nombre" [(ngModel)]="documentos.IDCLIENTE" name="razsoc">
+        </div>
+
+        <button class="btn btn-success" type="submit">Guardar</button>
+    </form>
+</div>

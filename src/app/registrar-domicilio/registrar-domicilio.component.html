@@ -1,0 +1,18 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center"> Registro de domicilio </h3>
+
+    <form (ngSubmit)="onSubmit()">
+         <div class="form-group">
+            <label>Direccion: </label>
+            <input type="text" class="form-control" placeholder="Direccion" id="nombre" [(ngModel)]="domicilio.DIRECCION" name="nombre">
+            <label>Departamento: </label>
+            <input type="text" class="form-control" placeholder="Departamento" id="nombre" [(ngModel)]="domicilio.DEPARTAMENTO" name="apellido">
+            <label>Municipio: </label>
+            <input type="text" class="form-control" placeholder="Municipio" id="nombre" [(ngModel)]="domicilio.MUNICIPIO" name="razsoc">
+            <label>Id cliente: </label>
+            <input type="text" class="form-control" placeholder="Id cliente" id="nombre" [(ngModel)]="domicilio.IDCLIENTE" name="telefono">
+        </div>
+
+        <button class="btn btn-success" type="submit">Guardar</button>
+    </form>
+</div>
